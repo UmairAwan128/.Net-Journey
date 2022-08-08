@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.pdb

@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\bin\Debug\StringVsStringBuilder.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\bin\Debug\StringVsStringBuilder.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\bin\Debug\StringVsStringBuilder.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\obj\Debug\StringVsStringBuilder.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\obj\Debug\StringVsStringBuilder.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\obj\Debug\StringVsStringBuilder.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\StringVsStringBuilder\StringVsStringBuilder\obj\Debug\StringVsStringBuilder.pdb

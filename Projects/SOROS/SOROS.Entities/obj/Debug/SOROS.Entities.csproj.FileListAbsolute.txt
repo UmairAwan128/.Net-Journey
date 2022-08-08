@@ -1,0 +1,5 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\SOROS\SOROS.Entities\bin\Debug\SOROS.Entities.dll
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\SOROS\SOROS.Entities\bin\Debug\SOROS.Entities.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\SOROS\SOROS.Entities\obj\Debug\SOROS.Entities.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\SOROS\SOROS.Entities\obj\Debug\SOROS.Entities.dll
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\SOROS\SOROS.Entities\obj\Debug\SOROS.Entities.pdb

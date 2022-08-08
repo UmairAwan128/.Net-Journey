@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\bin\Debug\predefined_Generic_Delegates.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\bin\Debug\predefined_Generic_Delegates.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\bin\Debug\predefined_Generic_Delegates.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\obj\Debug\predefined_Generic_Delegates.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\obj\Debug\predefined_Generic_Delegates.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\obj\Debug\predefined_Generic_Delegates.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\predefined_Generic_Delegates\predefined_Generic_Delegates\obj\Debug\predefined_Generic_Delegates.pdb

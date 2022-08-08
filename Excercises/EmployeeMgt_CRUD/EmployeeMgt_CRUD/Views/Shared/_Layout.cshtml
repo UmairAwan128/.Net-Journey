@@ -1,0 +1,93 @@
+﻿@* we created this by Add->NewItem then selecting "Reazor Layout" option *@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @* we installed the bootstrap using library-manager for details see "howToInstallPackageToDotNetCoreProject" file  *@
+
+    @*<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />*@
+    @* As we know we should load nonMinified Files e.g bootstrap.css in development for ease of debugging and minified files e.g bootstrap.min.cs
+        when the environment is any other like staging,production for good performance and for makking it bit more better we should
+        load min files from CDN i.e bootstrap also has its CDN which we can use to access bootStrap min file that is placed online on a URL we get url from bootstrap site.
+        As the file is online so if in any case the CDN file gets unreachable our application should load the min file from our project so to achieve all
+         these using the environmentTag helper. as we know The environment of application is defined in launchSettings.json in "ASPNETCORE_Environment" so
+        EnvironmentTagHelper reads this environement and depending on this can render different content which we did below*@
+    @* So load bootstrap.css file if environment is development *@
+    <environment include="Development">
+        @* Order of loading the files must be follwoed*@
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    </environment>
+    @* So to load bootstrap.min.css file if environment is Staging or production *@
+    @*  <environment include="Staging,Prodction">*@
+    @* in other word if environment is any other except development will do the same thing benifit if we add new env in app we don,t need to mention it here *@
+    @* <environment exclude="Development">
+          <link rel="stylesheet"
+                href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+        </environment>*@
+    @* "integrity" attribtue is used for "subresource IntegrityCheck" its value is calculated based on the content of the file it is
+        used so that no one can alter the file if someone alter file and loads the project so the file content will not be same as the
+        the value of "Integerity" attr so it will not allow loading the file from the CDN or bootstrap site we can test this by changing Integrity value*@
+
+    @* Now if  if in any case the CDN file gets unreachable so we should load min file from our project/server so new five test helpers added additioally *@
+    @* so if CDN is down load file from asp-fallback-href to check if the file is downloaded from CDN or not three "test-___" attr
+        are used they look for the class,property,value in the project if found this means CDN is downloaded if not the load the file from
+        our fallback server i.e here our own server  "asp-suppress-fallback-integrity" attr is used to check the integerity of the file we downloaded from the fallback
+        server i.e  fallback server can be any other online resoure . if value of this attr is true this means
+        don,t test/check inegrity of file for the file we get from fallbackServer and if false or ignore writting this, the value of attr "inegrity" will be checked
+        with the content of the file we downloaded from fallback server.
+        Note : Integrity of file is checked by matching file content with the value of "integrity" attr *@
+    <environment exclude="Development">
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true">
+
+        @* also add here min files for Jquery and bootstrap.js *@
+
+    </environment>
+
+
+    <link href="~/css/mySiteStyles.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a  class="navbar-brand" asp-action="index" asp-controller="home">
+                <img src="~/images/users.png" height="30" width="30" />
+            </a>
+            <button type="button" class="navbar-toggler" dat-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        @* we used here tagHelpers to specify the controller/Action for details about tagHelpers see Index.cshtml in Home folder *@
+                        <a asp-action="index" asp-controller="home" class="nav-link">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="create" asp-controller="home" class="nav-link">Create</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div >
+            @RenderBody()
+        </div>
+        @* A section provides a way to organize certain page elements position
+        A section can be mandatory or optional
+        It ia an optional renderSection() as fasle second parameter *@
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>

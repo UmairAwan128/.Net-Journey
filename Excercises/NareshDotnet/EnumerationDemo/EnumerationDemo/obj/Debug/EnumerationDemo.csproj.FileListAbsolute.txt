@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\bin\Debug\EnumerationDemo.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\bin\Debug\EnumerationDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\bin\Debug\EnumerationDemo.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\obj\Debug\EnumerationDemo.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\obj\Debug\EnumerationDemo.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\obj\Debug\EnumerationDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\EnumerationDemo\EnumerationDemo\obj\Debug\EnumerationDemo.pdb

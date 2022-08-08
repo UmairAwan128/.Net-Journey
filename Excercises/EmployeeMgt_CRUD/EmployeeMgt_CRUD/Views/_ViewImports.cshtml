@@ -1,0 +1,19 @@
+﻿@* Created it using add->newItem->Razor View Imports *@
+@*  First see the _ViewStart.cshtml
+    We Use this file to include the common nameSpaces so we don,t need to write the fully qualified name in
+    every View every time we include a file from that nameSpace.
+
+    //There can be many ViewImport files in an appication like we can have various ViewStart files
+    //if we create viewImport file in Home folder it will be for all the files inside the Home folder so all the views
+    //will use this file not the file that is in "Views" folder as the inner/new file will replace the implementation of outer file.
+
+*@
+@using EmployeeMgt_CRUD.ViewModels;
+@using EmployeeMgt_CRUD.Models;
+
+@* Tag Helper are like html helper they are processed on server side and converted to their respective html
+    there are various tag helpers e.g for links,forms e.t.c. to use them first import "@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers"
+     as we want to use tag helpers in all over our project so we import it in here 
+*@
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+

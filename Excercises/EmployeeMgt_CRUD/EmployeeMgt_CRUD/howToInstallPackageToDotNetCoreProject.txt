@@ -1,0 +1,35 @@
+To install Client side packages/libraries to to DotNetCore Project from FileSystem/CDN we can either follow any of the way.
+1. NPM
+2. WebPack
+3. LibMan(Library Manager)  we will use this  we need VS2017 ver 15.8 or greater for using this
+To use it rightClick project Add->ClientSideLibrary
+select provide e.g cdnjs
+enter libray/package to download in library field e.g  "twitter-bootstrap@versionYouWant"
+then either include all or choose specific library files.
+byDef all packages are placed in wwwroot folder inside "lib" folder.
+
+To manage these packages/libraries lib-manager creates a libman.json file and place it in root folder of project
+we can also use this file to install Client side packages/libraries so for that open file you see each package/library
+is represented by an object like we created this new
+    {
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/lib/jquery/"
+    }
+so to add just enter name of package in "library" also here we have intllisense so latest version also selected and
+assign destination.save the file and the package will be installed to the project.
+
+To Delete all the clientSideLibraries we installed rightClick libman.json and select "clean-Client-Side-Libraries"
+but content/ref to libraries in libman.json stays as in future if we want to reinstall these packages we can do this
+by rightClick libman.json and select the option "Restore-Client-Side-Libraries" so all libraries are again installed.
+
+We can also upgrade or downgrade version of package using this libman.json file simply go and 
+change the version of package you want we also get intellisense and save the file the respective 
+version of the package will be installed and the previous files will be deleted. Or while changing
+version click the lightBulb and select check for update to update to latest stable version.
+
+To Unintall a specific package/libray move cursor to respective package and click the lightBulb
+and select uninstall package/library option or either uninstall library by just remove the object
+that is representing the respective package/library from libman.json.
+ 
+
+

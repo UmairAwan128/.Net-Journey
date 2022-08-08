@@ -1,0 +1,7 @@
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\bin\Debug\StructuresDemo.exe.config
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\bin\Debug\StructuresDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\bin\Debug\StructuresDemo.pdb
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\obj\Debug\StructuresDemo.csprojResolveAssemblyReference.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\obj\Debug\StructuresDemo.csproj.CoreCompileInputs.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\obj\Debug\StructuresDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\StructuresDemo\StructuresDemo\obj\Debug\StructuresDemo.pdb

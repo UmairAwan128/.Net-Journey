@@ -1,0 +1,7 @@
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.exe.config
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\bin\Debug\IndexerDemo.pdb
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.csprojResolveAssemblyReference.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.csproj.CoreCompileInputs.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\IndexerDemo\IndexerDemo\obj\Debug\IndexerDemo.pdb

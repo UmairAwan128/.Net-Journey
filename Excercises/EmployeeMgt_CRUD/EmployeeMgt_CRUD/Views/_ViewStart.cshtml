@@ -1,0 +1,30 @@
+﻿
+@{
+    //we created this file using Add->NewItem->Razor View Start
+
+    //Avoid code duplication to make maintainence of your application easy here we assigned name of layout file inspite of assigning
+    //in all files and making code duplication we just assigned here i.e all our files will be using this _layout.cshtml
+    //we usually place this in "View" folder. There can be many ViewStart files in an appication as there can be various _layout files
+    //e.g for "Home" controller Views we have seperate ViewStart file as that file is inside the Home folder so all Home views
+    //will use that file not this one.
+
+    //So all files/Views in the "Views" folder use this file or extends from _Layout.cshtml but if we want that a specific
+    //View will have anyother _Layout file so in that file we assign that LayoutView name by creating a variable there named "Layout"
+    //so that value/layout will be used inspite of this also if we want that a specific view not to have any layout so in that
+    //file we assign this "Layout" variable to null
+
+    Layout = "_Layout";
+
+    ////but there will be a case when we want to dynamically select layout page on runtime e.g select either _AdminLayout or _nonAdminLayout
+    ////depending on the role of the current user that is loggedIn.
+    //if (User.IsInRole("Admin"))
+    //{
+    //    Layout = "_AdminLayout";
+    //}
+    //else {
+    //    Layout = "_NonAdminLayout"; 
+    //}
+
+    ////Code in ViewStart executes before any View extending it
+    ////in ViewStart File we can also have the Code which is common in all the files 
+}

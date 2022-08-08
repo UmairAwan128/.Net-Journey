@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\HashMakerSol\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\HashMakerSol\\.nuget\\packages"
+    ]
+  }
+}

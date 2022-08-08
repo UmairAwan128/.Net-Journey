@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\bin\Debug\InheritenceDemo.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\bin\Debug\InheritenceDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\bin\Debug\InheritenceDemo.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\obj\Debug\InheritenceDemo.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\obj\Debug\InheritenceDemo.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\obj\Debug\InheritenceDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\InheritenceSolutionSpace\InheritenceDemo\obj\Debug\InheritenceDemo.pdb

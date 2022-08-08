@@ -1,0 +1,7 @@
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\obj\Debug\CSharp7NewFeature.csprojAssemblyReference.cache
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\obj\Debug\CSharp7NewFeature.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\bin\Debug\CSharp7NewFeature.exe.config
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\bin\Debug\CSharp7NewFeature.exe
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\bin\Debug\CSharp7NewFeature.pdb
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\obj\Debug\CSharp7NewFeature.exe
+C:\Users\umair awan\source\repos\CSharp7NewFeature\CSharp7NewFeature\obj\Debug\CSharp7NewFeature.pdb

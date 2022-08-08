@@ -1,0 +1,46 @@
+Migration is a feature of EFCore that keeps dataabase scheema/tables and model classes in sync with each other. 
+we apply migrations first to create table from model classes and then if we made any change in our model afterward
+we have to again apply migrations to keep scheema/table in sync with the Model class otherwise our application will
+not work as expected.
+
+To work with migrations in ASP.NET CORE we can either work with packageManagerConsole or DotNetCore CLI as 
+its cross platform.
+So we use PackageManagerConsole we use here various commands to see them or want help use  "Get-Help about_entityframeworkcore"
+if we want help about any command like Add-Migration type "Get-Help Add-Migration" we also have intellisense here use Tab key while typing.
+For Migration use
+1. Add-Migration   press enter then type name:"InitialMigration"
+2. Update-Database    
+we can also pass migration name with Update-Database so that specfic migration will be only applied in this case latest Migration
+is applied or all
+So this command created Database first as there is no then the table.
+
+
+Every time we run Add-Migration command two things happens 
+1. specific migration file is created which has two methods up() and down() the up()
+   has the code for operation we want say we want to create table and down() will have its opposite code i.e to undo the
+   operation or to drop the table. up() executed when we run "Update-Database" command in packageManagerConsole and 
+2. the file "AppDbContextModelSnapshot.cs" is updated, this file contains snapshot of your current model this file is created
+   when first migration is added and updated with each subsequent migration, so this file has representation of our Model
+   in table like form so if we say added a new field in Employee model class and after we run Add-Migration that field is added 
+   to this class as column inside the Employee Entity/object as its column.EFCore migration API uses this file to determine 
+   what has changed when we add new Migration.
+
+
+To remove a Migration that is not yet applied to database use   "Remove-Migration"  
+(Using this We can remove only those migrations which are not applied or on which we didnot applied "Update-Database" command)
+this command removes the most recent Migration file and additionally it reverts the "AppDbContextModelSnapshot.cs" file as we
+know Add-Migration command also add content to this file so this file is reverted back to old state. e.g we added Migration for 
+adding new column to table and when we run this command its specific migration file is created and in "AppDbContextModelSnapshot.cs" a property
+is added to object/Entity represeting Employee table with same name. and when we run "Remove-Migration" migration file is deleted
+and this property from the respective object is removed i.e reverted back to old position.
+
+To remove Applied migrations i.e which are applied on Database or on which we have applied "Update-Database" command : 
+e.g say we added a column to table which we don,t want now to remove that we need to first revert our migrations back which means
+undo to specific migration where every thing was how you want and then apply the "Remove-Migration" to remove migration file and revert
+back "AppDbContextModelSnapshot.cs". So in our Database we have a table "__EFMigrationHistory" which has an entry for each migration
+we applied to Database we can see that list and check the name of migration and use that name to revert the database back
+to the state it was when that migration was executed. We use "Update-Database" command to revert/undo back to any migration 
+by passing its name with command. e.g  " Update-Database AlterEmployeeSeedData" so now this command has reverted back to 
+that specific Migration so after this all applied migrations implementations are removed i.e Columns that we don,t want
+are removed and the entries for all the next migrations that were here for adding columns in the "__EFMigrationHistory" 
+table are also removed. now apply "Remove-Migration" to remove migration file and revert back "AppDbContextModelSnapshot.cs" also to that state.

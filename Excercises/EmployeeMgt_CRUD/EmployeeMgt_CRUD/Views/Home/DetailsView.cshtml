@@ -1,0 +1,102 @@
+﻿@* this below line makes our view stronglyTypedView(is in which intellisense works and type is known at compile time) i.e we are telling this view will be u sing this model
+    if we don,t write this line we can even access "Model" i.e all the properties but without intellisense and type will be
+    dynamic which makes this view loosly typed view *@
+@*@model EmployeeMgt_CRUD.Models.Employee*@
+
+@* instead of specifying the nameSpaces or fully qualified name for the models/files we move the nameSpace declaration
+    into _ViewImports file as we created this file in the "Views" folder so all the files/Views in this folder will be able
+    access all the files/models in the namespce "EmployeeMgt_CRUD.ViewModels" with directly their name inpite of writting there fullyQualified name so
+*@
+@* @model EmployeeMgt_CRUD.ViewModels.HomeDetailsViewModel
+   so commented this now we don,t need to specify fullyQualified name
+*@
+@model HomeDetailsViewModel
+
+@* type "html" and press tab once to auto generate <html> code *@
+
+
+@{
+    //Avoid code duplication to make maintainence of your application easy here we assigned name of layout file and in other
+    //files also if we want to change the name of layout file we will be changing it by going into all the files so use the "Razor View Start"
+    // file i.e here "_ViewStart.cshtml" this file is like _layout.cshtml all files inherit it and in this file we tell the name of layout file so only one
+    //place and changing gets easy so we removed this line from here.
+    // Layout = "~/Views/Shared/_Layout.cshtml"; //use this file as layout view for this file
+
+    //so as now we have _ViewStart.cshtml in our "Views" folder so all the files/view in this folder will be extending from "_Layout.cshtml"
+    //because in that file we have a variable name "Layout" which has this name as its value, but if we want to assign another layout
+    //to this view all we need to do is create variable named "Layout" here and assign it the name of the Layout which we want
+    //this view to extend from so this value/layout will be used inspite of that.
+    //    Layout = "_Layout2";         //use layout2 for this specific view
+    //also if we want this view not to have any layout so in that
+    //case we assign this "Layout" variable to null
+    //    Layout = "null";              //don,t use any layout for this specific view
+
+
+
+    ViewBag.Title = Model.PageTitle; //here we are passing the "ViewBag.Title" to the _Layout.cshtml so to display there
+
+    var photoPath = "~/Images/" + (Model.Employee.PhotoPath ?? "no-image.png"); //if photPath is null use no-image.png
+}
+
+@*<h1>Accessing DetailsView.cshtml present in Views/Home folder</h1><br>*@
+
+@*<h3>@ViewData["PageTitle"]</h3>*@
+@*<h3>@ViewBag.PageTitle</h3>*@
+
+@*<h3>@Model.PageTitle</h3>*@
+
+@{
+////the data passed using ViewData to view should be converted/typecast to its type but in case of string we don,t do conversion.
+// var employee = ViewData["Employee"] as EmployeeMgt_CRUD.Models.Employee;
+////DrawBack of using ViewData
+////1. View knows the type of data at runtime inspite of compileTime so loosely typed view
+////2. We don,t have intellisense to access these keys so we can easily misspell them also if we misspell we
+////will get this error at runtime inspite of at compile time.
+
+//var employee = ViewBag.Employee; //ViewBag uses dynamic properties inspite of stringKeys here don,t need to typecast the data passed
+////as the type of everything here is "dynamic" i.e type will be known at runtime. here we also don,t have intellisense
+////so we can misspell properties and we get error on runtime inspite of on compile time.
+
+}
+@* to access either ViewBag/ViewData use *@
+@*<div>Names:@employee.Name</div>
+    <div>Email:@employee.Email</div>
+    <div>Department:@employee.Departmrnt</div>*@
+@*<div>Names:@Model.Name</div>
+    <div>Email:@Model.Email</div>
+    <div>Department:@Model.Departmrnt</div>*@
+
+@*<div>Names:@Model.Employee.Name</div>
+<div>Email:@Model.Employee.Email</div>
+<div>Department:@Model.Employee.Departmrnt</div>*@
+
+@* Adding bootstrap design so *@
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Employee.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@photoPath" asp-append-version="true" />
+        @* asp-append-version="true"   is used to show the image dynamic value i.e as path was in variable so used this property otherwise image will be broken *@
+
+                <h4>Employee Id: @Model.Employee.Id</h4>
+                <h4>Email: @Model.Employee.Email</h4>
+                <h4>Department: @Model.Employee.Department</h4>
+            </div>
+            <div class="card-footer text-center">
+                @*  <a href="/home/index" class="btn btn-primary">Back</a>  *@
+                @* or do same thing using TagHelper for details see Index.cshtml inside Home folder *@
+                <a asp-controller="home" asp-action="index" class="btn btn-primary">Back</a>
+                <a asp-action="edit" asp-controller="home" asp-route-id="@Model.Employee.Id" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/myCustomScript.js"></script>
+}

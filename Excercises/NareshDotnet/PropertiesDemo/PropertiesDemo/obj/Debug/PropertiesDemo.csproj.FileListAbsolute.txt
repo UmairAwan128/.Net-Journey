@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.pdb

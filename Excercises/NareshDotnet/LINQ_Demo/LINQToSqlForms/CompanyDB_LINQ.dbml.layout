@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CompanyDB_LINQ">
+  <DataContextMoniker Name="/CompanyDB_LINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9b136cf3-906d-45a5-a39c-8da66d0b4351" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CompanyDB_LINQDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8973b47b-19a3-480d-b783-b6c84841e3dc" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55c196df-1406-44c7-9a81-a0c94200a126" absoluteBounds="6.125, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CompanyDB_LINQDataContext/Dept" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33e51fd4-a1c9-4a41-8621-feae0d67caad" absoluteBounds="6.14, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e68db7ec-70fb-4ba3-9c5d-8ba8f827dc37" absoluteBounds="6.125, 2.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CompanyDB_LINQDataContext/Emp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72cdfc56-4c5b-4ac9-8f0d-83490ea59ac8" absoluteBounds="6.14, 3.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 1.8862939453125); (7.125 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CompanyDB_LINQDataContext/Dept/Dept_Emp" />
+      <nodes>
+        <classShapeMoniker Id="55c196df-1406-44c7-9a81-a0c94200a126" />
+        <classShapeMoniker Id="e68db7ec-70fb-4ba3-9c5d-8ba8f827dc37" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.83423076923077 : 5.22280110677083); (6.83423076923077 : 5.47280110677083); (7.42961538461539 : 5.47280110677083); (7.42961538461539 : 5.22280110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CompanyDB_LINQDataContext/Emp/Emp_Emp" />
+      <nodes>
+        <classShapeMoniker Id="e68db7ec-70fb-4ba3-9c5d-8ba8f827dc37" />
+        <classShapeMoniker Id="e68db7ec-70fb-4ba3-9c5d-8ba8f827dc37" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

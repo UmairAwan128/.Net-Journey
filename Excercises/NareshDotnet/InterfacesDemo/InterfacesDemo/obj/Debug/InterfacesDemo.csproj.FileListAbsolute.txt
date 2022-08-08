@@ -1,0 +1,7 @@
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\obj\Debug\InterfacesDemo.csprojResolveAssemblyReference.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\obj\Debug\InterfacesDemo.csproj.CoreCompileInputs.cache
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\bin\Debug\InterfacesDemo.exe.config
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\bin\Debug\InterfacesDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\bin\Debug\InterfacesDemo.pdb
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\obj\Debug\InterfacesDemo.exe
+c:\users\umair awan\documents\visual studio 2017\Projects\InterfacesDemo\InterfacesDemo\obj\Debug\InterfacesDemo.pdb

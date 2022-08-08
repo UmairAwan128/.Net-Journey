@@ -1,0 +1,14 @@
+﻿/*
+    We created this file by Add->newItem->Style Sheet
+    
+    we wanted that each button will have the same width so we defined it here by changing the
+    width value of the bootstrap button.
+*/
+.btn {
+    width:75px;
+}
+.myImageThumbnail {
+    height: 200px;
+    width: auto
+    
+}

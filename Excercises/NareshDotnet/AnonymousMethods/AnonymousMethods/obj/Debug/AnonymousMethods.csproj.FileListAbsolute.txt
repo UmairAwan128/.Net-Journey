@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\bin\Debug\AnonymousMethods.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\bin\Debug\AnonymousMethods.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\bin\Debug\AnonymousMethods.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\obj\Debug\AnonymousMethods.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\obj\Debug\AnonymousMethods.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\obj\Debug\AnonymousMethods.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AnonymousMethods\AnonymousMethods\obj\Debug\AnonymousMethods.pdb

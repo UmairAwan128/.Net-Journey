@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\bin\Debug\AccessModifiersDemo.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\bin\Debug\AccessModifiersDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\bin\Debug\AccessModifiersDemo.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\obj\Debug\AccessModifiersDemo.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\obj\Debug\AccessModifiersDemo.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\obj\Debug\AccessModifiersDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\AccessModifiers\AccessModifiersDemo\obj\Debug\AccessModifiersDemo.pdb

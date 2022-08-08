@@ -1,0 +1,7 @@
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\bin\Debug\DelegatesDemo.exe.config
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\bin\Debug\DelegatesDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\bin\Debug\DelegatesDemo.pdb
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\obj\Debug\DelegatesDemo.csprojResolveAssemblyReference.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\obj\Debug\DelegatesDemo.csproj.CoreCompileInputs.cache
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\obj\Debug\DelegatesDemo.exe
+C:\Users\umair awan\Documents\Visual Studio 2017\Projects\DelegatesDemo\DelegatesDemo\obj\Debug\DelegatesDemo.pdb

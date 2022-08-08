@@ -1,0 +1,99 @@
+﻿@* instead of specifying the nameSpaces or fully qualified name for the models/files we move the nameSpace declaration
+    into _ViewImports file as we created this file in the "Views" folder so all the files/Views in this folder will be able
+    access all the files/models in the namespce "EmployeeMgt_CRUD.Models" with directly their name inpite of writting there fullyQualified name so
+*@
+@* @model IEnumerable<EmployeeMgt_CRUD.Models.Employee>
+    so commented this now we don,t need to specify fullyQualified name
+*@
+@model IEnumerable<Employee>
+
+@{
+    //Avoid code duplication to make maintainence of your application easy here we assigned name of layout file and in other
+    //files also if we want to change the name of layout file we will be changing it by going into all the files so use the "Razor View Start"
+    // file i.e here "_ViewStart.cshtml" this file is like _layout.cshtml all files inherit it and in this file we tell the name of layout file so only one
+    //placce and changing gets easy so we removed this line from here.
+    // Layout = "~/Views/Shared/_Layout.cshtml"; //use this file as layout view for this file
+    ViewBag.Title = "Employee List"; //here we are passing the "ViewBag.Title" to the _Layout.cshtml so to display there
+}
+
+@*<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Department</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.Departmrnt</td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+
+<div class="card-deck">
+    @foreach(var employee in Model){
+
+        var photoPath = "~/Images/" + (employee.PhotoPath ?? "no-image.png"); //if photPath is null use no-image.png
+
+        // min-width:18rem and max-width:30.5 %;   these two properties are used so only three employee cards are shown in single row and if forth added move it to the next line
+    <div class="card m-3" style="min-width:18rem; max-width:30.5%;">
+        <div class="card-header">
+            <h3>@employee.Name</h3>
+        </div>
+
+        @* Most Browser Cache Images so not to reload them from server again and again so browser saves image with name
+        and when we reload the page the image with that name is searched in cache if found that image is loaded from cache
+        inspite of loading from server but there is a problem with this say if image content changes e.g another file/image
+        with same name is created and old file is deleted so the as browser caches images so will be loading the old file/image
+        until we hard reload the page. So ASP.NET Core provides ImageTagHelper whose responsibility is to keep track of
+        content of file if changed then load image from Server if not load image from browser cache to use it just write asp-append-version="true"
+        ImageTagHelper keep track of content of image file by appending a unique string at the end of the "src=" value i.e end of nameOfImage
+        this unique string is generated based on the content of Image each time code run and as we know browser caches files
+        so first time the file will be cached but now the name of the image will be name+UniqueString as we know it is appened
+        at the end of the image file name so now if another file with same name is created and old file is deleted so now as
+        the content of the image changes so a new uniqueString will be generated depending on the content of image and as
+        uniqueString changes so this time the file will be loaded from server inspite of from the browser cache as we know
+        the name of the image is name+UniqueString*@
+        <img class="card-img-top myImageThumbnail" src="@photoPath" asp-append-version="true" />
+        @* asp-append-version="true"   is used to show the image dynamic value i.e as path was in variable so used this property otherwise image will be broken *@
+
+        <div class="card-footer text-center">
+            @* We can create link with the follwing ways *@
+            @*       <a href="/home/detailsView/@employee.Id" class="btn btn-primary">View</a>*@
+            @* We can do same thing using the HtmlHelper for link which is a cleaner way here first parameter is linkText
+            2nd is Action, 3rd is controller name and in 4th parameter we pass value of route parameter or pass here parameter that action requires.  *@
+            @*     @Html.ActionLink("ViewHtmlHlpr", "detailsView", "home", new { id = employee.Id })*@
+            @* other way of using HtmlHelper is *@
+            @*     <a href="@Url.Action("detailsView", "home", new { id = employee.Id })" class="btn btn-primary">ViewHtmlHlpr2</a>*@
+            @*Now doing samething using Tag Helper are like html helper they are processed on server side and converted to their respective html
+            there are various tag helpers e.g for links,forms e.t.c. to use them first import "@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers"
+            as we want to use tag helpers in all over our project so we import library in _ViewImports.cshtml here we used tagHelper of <a>/link inside <a> tag
+            e.g asp-controller, asp-action are tag helpers of <a> which like modifies the <a> tag
+            *@
+            <a asp-controller="home" asp-action="detailsView" asp-route-id="@employee.Id" class="btn btn-primary m-1">View</a>
+            @* We should prefer using tagHelper on any other way because of the following reason
+            lets say we have completed our project and we have alot of controller/action/views in our application
+            and we want to make change in our defaultRouteTemplate i.e now "{controller=Home}/{action=Index}/{id?}" and
+            we got new requirement from client that it wants that all apllication url should start with companyName then
+            controller then action i.e this "companyName/{controller=Home}/{action=Index}/{id?}" so we need to change all
+             the urls in the application as old code i.e href="/home/detailsView/1" is mapped on our old route and will not work now
+             to make it work we need to append "companyName" in start of all the url's but if we used HtmlHelpers/tagHelpers we don,t need
+             to chnage any of the url in applcation as the value of specific TagHelper is injected to specific place of route and then finnly we
+            get route with values placed e.g the value "asp-controller" is injected in place of {controller=Home} in route and value "asp-action" is injected
+            in place of {action=Index} in the RouteTemplate and asp-route-id is injected in {id?} and after putting all
+            these values we get a url and that will be used so here we get url companyName/home/detailsView/id
+                    we added the new route in StartUp.cs
+            *@
+            <a asp-action="edit" asp-controller="home" asp-route-id="@employee.Id" class="btn btn-primary m-1">Edit</a>
+            <a href="#" class="btn btn-danger m-1">Delete</a>
+        </div>
+    </div>
+    }
+</div>
