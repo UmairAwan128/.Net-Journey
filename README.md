@@ -2,7 +2,7 @@
  These are the exercises and Projects, I completed while learning C#, .Net and .Net Core technologies
  
 # MOOC Used
-These exercises and projects are part of various courses on Youtube and my personal learning projects.
+These exercises and projects are part of various courses on Youtube and my personal learning projects like Semester Projects, Certification Projects.
 
 # Projects
 Some of the important projects that I built during the journey.
